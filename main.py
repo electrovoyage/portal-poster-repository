@@ -45,7 +45,7 @@ else:
     i = sys.argv.index('--pack')
     file = sys.argv[i + 1]
     
-    with open(file, 'wb') as _pack_file:
+    with open(file, 'rb') as _pack_file:
         pack_dat = _pack_file.read()
 
 pack_f = BytesIO(pack_dat)
