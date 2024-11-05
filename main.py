@@ -116,30 +116,9 @@ class PosterInfo:
                 
             self.animated = True
             self.framenum = IntVar(value=-1)
-                    
-                #self.frames.append(img)
-                #self.lasttkframe
-            
-        #    #downloader.addposter(self.imagepath, self)
-        #elif dat['image'].split('.')[1] == 'json':
-        #    anim_data = requests.get(IMAGE_URL_PREFIX + dat['image']).json()
-        #    self.image_paths: list[str] = [f'{IMAGE_URL_PREFIX}{anim_data['folder']}/{i}.png' for i in range(1, anim_data['frames'] + 1)]
-        #    #print(self.image_paths)
-        #    self.frames: list[Image.Image] = []
-        #    self.framestk: list[ImageTk.PhotoImage] = []
-        #    self.small_frames: list[Image.Image] = []
-        #    self.framestk_small: list[ImageTk.PhotoImage] = []
-        #    
-        #    self.latestframetk: ImageTk.PhotoImage = None
-        #    self.frame = IntVar(win, 0)
-        #    self.downloader.addmultiframeposter(self.image_paths, self)
-        #    self.downloader.start()
         
         self.style: str = dat['style']
         self.sources: list[str] = dat['sources']
-        
-        #self.label = Label(posterlist, compound=TOP)
-        #self.label.pack(
             
     def setframe(self, fr: Frame):
         self.frame = fr
